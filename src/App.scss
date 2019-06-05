@@ -1,0 +1,89 @@
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,500);
+
+$background-transition: background-color 1s ease;
+$font-transition: color 1s ease;
+
+body {
+  transition: $background-transition;
+}
+
+.box {
+  background-color: white;
+  border-radius: 4px;
+  padding: 20px;
+  min-width: 420px;
+  min-height: 200px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  @media(max-width: 650px) {
+    min-width: 200px;
+    width: 80%;
+  }
+}
+
+.quote-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.quote {
+  font-family: Raleway;
+  font-weight: 500;
+  font-size: 2.5em;
+  transition: $font-transition;
+}
+
+.author {
+  font-family: Raleway;
+  font-size: 1em;
+  font-weight: 400;
+  align-self: flex-end;
+  margin: 10px 18px 20px 0;
+  transition: $font-transition;
+}
+
+.button-row {
+  display: flex;
+  width: 93%;
+  margin-top: 15px;
+  justify-content: space-between
+}
+
+.social {
+  display: flex;
+  justify-content: flex-start;
+  width: 31%;
+  height: 100%;
+}
+
+button {
+  border: none;
+  border-radius: 4px;
+  color: white;
+  padding: 8px;
+  cursor: pointer;
+  outline: none;
+  transition: $background-transition;
+  &:hover {
+    opacity: 0.85;
+    transition: $background-transition;
+  }
+}
+
+#social-btn {
+  width: 50px;
+  height: 50px;
+  font-size: 1.4em;
+  margin-right: 5px;
+}
+
+#quote-btn {
+  font-family: Raleway;
+  font-size: 1em;
+}
