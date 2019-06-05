@@ -3,7 +3,7 @@
 A simple application to randomly generate quotes from a directory. My first React app.
 
 ## Screenshots
-!['Screenshot Home page'](https://github.com/dwgillette/RandomQuoteMachine/blob/master/docs/Quote Screen Shot.png?raw=true)
+!['Screenshot Home page'](https://github.com/dwgillette/RandomQuoteMachine/blob/master/docs/QuoteScreenShot.png?raw=true)
 
 ## Dependencies
 - React
