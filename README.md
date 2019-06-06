@@ -7,8 +7,11 @@ A simple application to randomly generate quotes from a directory. My first Reac
 
 ## Dependencies
 - React
+- React-DOM
+- React-scripts
+- Node-sass
 - Axios
-- Babel-loader
+- Font-awesome
 
 ## Getting Started
 Start by running ```$ npm install``` inside the main project folder
