@@ -41,7 +41,7 @@ class App extends React.Component {
     let _this = this;
     _this.serverRequest = 
       axios
-        .get("https://raw.githubusercontent.com/dwgillette/quotes/master/library")
+        .get("https://raw.githubusercontent.com/dwgillette/RandomQuoteMachine/master/docs/quoteLibrary")
         .then(function(response) { 
           let quotesData = response.data;
           let newQuote = quotesData.quotes[Math.floor(Math.random() * quotesData.quotes.length)];
