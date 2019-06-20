@@ -118,7 +118,7 @@ class Quote extends React.Component {
   
   componentWillReceiveProps() {
     this.unMountStyle(); // call exit animation
-    this.renderQuote(); // takes new props and renders quote
+    setTimeout(this.renderQuote, 505); // takes new props and renders quote
     setTimeout(this.mountStyle, 510); // call enter animation
   }
   
@@ -141,12 +141,10 @@ class Quote extends React.Component {
   }
   
   renderQuote() {
-    setTimeout(()=>{
-      this.setState({
-        quote: this.props.quote,
-        author: this.props.author
-      })
-    }, 505)
+    this.setState({
+      quote: this.props.quote,
+      author: this.props.author
+    })
   }
   
   render() {
